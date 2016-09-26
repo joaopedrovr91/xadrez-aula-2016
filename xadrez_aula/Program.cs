@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using Tabuleiro;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,14 +10,10 @@ namespace xadrez_aula
     {
         static void Main(string[] args)
         {
+            Posicao p;
+            p = new Posicao(1, 2);
 
-            Console.Write("Digite um valor inteiro: ");
-
-            int x = int.Parse(Console.ReadLine());
-
-            int y = 3 * x;
-
-            Console.WriteLine("TRIPLO = " + y);
+            Console.WriteLine("Posição = " + p);
 
             Console.ReadLine();
         }
